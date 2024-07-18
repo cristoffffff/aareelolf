@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.hero-box {
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 80px;
+}
+.hero-text {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+.hero-text:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    max-height: 250px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilos específicos para cada héroe */
+#hulk { color: #1a5c1a; border-color: #1a5c1a; }
+#hulk:hover { color: #2ecc71; border-color: #2ecc71; }
+
+#ironman { color: #631e15fb; border-color: #811818; }
+#ironman:hover { color: #7a1313b0; border-color: #8b1414bb; }
+
+#spiderman { color: #f30000; border-color: #f80707; }
+#spiderman:hover { color: #e93030; border-color: #e72525; }
+
+#thor { color: #7f8c8d; border-color: #7f8c8d; }
+#thor:hover { color: #95a5a6; border-color: #95a5a6; }
